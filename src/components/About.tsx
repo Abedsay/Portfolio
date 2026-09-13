@@ -8,11 +8,11 @@ const pillars = [
   },
   {
     title: "What I work on",
-    body: "Day to day, that means manual and automated testing, regression and release validation, and — most notably — taking QA responsibility for an AI project built around LLM-based chatbots and agent systems: designing scenarios, evaluating responses, and writing the guidelines that improve consistency.",
+    body: "Day to day, that means manual and automated testing, regression and release validation, and most notably taking QA responsibility for an AI project built around LLM-based chatbots and agent systems: designing scenarios, evaluating responses, and writing the guidelines that improve consistency.",
   },
   {
     title: "What I'm becoming",
-    body: "QA gave me a close-up view of how software actually breaks. I'm building on that toward two connected directions: Software Development Engineer in Test, and AI Engineering — combining automation, testing infrastructure, and AI-powered application development.",
+    body: "QA gave me a close-up view of how software actually breaks. I'm building on that toward two connected directions: Software Development Engineer in Test, and AI Engineering. Combining automation, testing infrastructure, and AI-powered application development.",
   },
 ];
 
