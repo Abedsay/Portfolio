@@ -7,7 +7,7 @@ export const profile = {
   location: "Beirut, Lebanon",
   github: "https://github.com/Abedsay",
   linkedin: "https://www.linkedin.com/in/abdullah-jrad/",
-  cvPath: `${import.meta.env.BASE_URL}cv/Abdullah_Jrad_CV.pdf`,
+  cvPath: "/Portfolio/cv/Abdullah_Jrad_CV.pdf",
   currentRole: "Quality Assurance Consultant",
   currentCompany: "Noema Consulting",
   buildingToward: "SDET + AI Engineering",
