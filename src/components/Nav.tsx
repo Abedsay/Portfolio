@@ -133,7 +133,7 @@ export function Nav() {
           ref={mobileMenuRef}
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 top-[60px] z-[60] flex flex-col bg-[#080b0e] px-6 py-10 md:hidden"
+          className="fixed inset-0 top-[60px] z-[100] isolate flex flex-col overflow-y-auto bg-[#080b0e] px-6 py-10 opacity-100 backdrop-blur-none md:hidden"
         >
           <nav className="flex flex-col gap-1" aria-label="Mobile">
             {nav.map((item) => (
@@ -141,7 +141,7 @@ export function Nav() {
                 key={item.id}
                 onClick={() => goTo(item.id)}
                 aria-current={active === item.id ? "page" : undefined}
-                className={`min-h-12 border-b border-[var(--color-border-soft)] py-4 text-left text-lg ${active === item.id ? "text-[var(--color-accent)]" : "text-[var(--color-paper)]"
+                className={`min-h-12 cursor-pointer border-b border-[var(--color-border-soft)] py-4 text-left text-lg transition-colors ${active === item.id ? "text-[var(--color-accent)]" : "text-[var(--color-paper)]"
                   }`}
               >
                 {item.label}
@@ -149,17 +149,17 @@ export function Nav() {
             ))}
           </nav>
           <div className="mt-8 flex items-center gap-6">
-            <a href={profile.github} target="_blank" rel="noreferrer" className="text-[var(--color-muted)]" aria-label="GitHub">
+            <a href={profile.github} target="_blank" rel="noreferrer" className="cursor-pointer text-[var(--color-muted)] transition-colors hover:text-[var(--color-paper)]" aria-label="GitHub">
               <GithubIcon size={20} />
             </a>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="text-[var(--color-muted)]" aria-label="LinkedIn">
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="cursor-pointer text-[var(--color-muted)] transition-colors hover:text-[var(--color-paper)]" aria-label="LinkedIn">
               <LinkedinIcon size={20} />
             </a>
           </div>
           <a
             href={profile.cvPath}
             download
-            className="mt-6 rounded-full border border-[var(--color-accent)] px-5 py-3 text-center text-sm text-[var(--color-accent)]"
+            className="mt-6 cursor-pointer rounded-full border border-[var(--color-accent)] px-5 py-3 text-center text-sm text-[var(--color-accent)] transition-colors hover:bg-[var(--color-accent)] hover:text-[var(--color-ink)]"
           >
             Download CV
           </a>
