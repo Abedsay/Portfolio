@@ -59,8 +59,8 @@ export function Nav() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b border-transparent transition-[background-color,border-color] duration-300 ${scrolled
-          ? "border-[var(--color-border-soft)] bg-[var(--color-ink)]/70 backdrop-blur-md"
-          : "bg-transparent"
+        ? "border-[var(--color-border-soft)] bg-[var(--color-ink)]/70 backdrop-blur-md"
+        : "bg-transparent"
         }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">
@@ -133,7 +133,7 @@ export function Nav() {
           ref={mobileMenuRef}
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 top-[60px] z-40 flex flex-col bg-[var(--color-ink)] px-6 py-10 md:hidden"
+          className="fixed inset-0 top-[60px] z-[60] flex flex-col bg-[#080b0e] px-6 py-10 md:hidden"
         >
           <nav className="flex flex-col gap-1" aria-label="Mobile">
             {nav.map((item) => (
